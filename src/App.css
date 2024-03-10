@@ -3,7 +3,7 @@
 }
 
 h1{
-  color:rgb(129, 123, 123);
+  color:rgb(110, 107, 107);
 }
 .App-logo {
   height: 40vmin;
@@ -17,7 +17,7 @@ h1{
 }
 
 .App-header {
-  background-color: rgb(223, 184, 166);
+  background-color: rgb(16, 9, 6);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

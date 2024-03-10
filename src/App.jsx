@@ -18,7 +18,7 @@ function App() {
   return (
     <DndProvider backend={HTML5Backend}>
     <Toaster /> 
-    <div className="bg-red-100 text-white w-full min-h-screen flex flex-col items-center pt-32 gap-16  pb-32 relative">
+    <div className="bg-red-10 text-coolGray-500 w-full min-h-screen flex flex-col items-center pt-32 gap-16  pb-32 relative">
       <h1 className="w-full text-center text-5xl">Project-Board</h1>
       <CreateTask tasks={tasks} setTasks={setTasks}/>
       <ListTask tasks={tasks} setTasks={setTasks}/>

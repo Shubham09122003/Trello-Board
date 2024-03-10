@@ -53,17 +53,17 @@ const Section = ({
   }));
 
   let text = "Todo";
-  let bg = "bg-red-500";
+  let bg = "bg-red-100";
   let tasksToMap = todo;
 
   if (status === "inprogress") {
     text = "In Progress";
-    bg = "bg-orange-500";
+    bg = "bg-green-200";
     tasksToMap = inProgress;
   }
   if (status === "completed") {
     text = "Completed";
-    bg = "bg-green-500";
+    bg = "bg-blue-200";
     tasksToMap = completed;
   }
 
@@ -85,9 +85,9 @@ const Section = ({
   };
 
   return (
-    <div ref={drop} className={`w-64 rounded-md p-2 ${isOver? "bg-red-50":""} border min-h-[200px]`}>
+    <div ref={drop} className={`w-64 rounded-md p-2 ${isOver? "bg-purple-50":""} border min-h-[200px]`}>
       <Header text={text} bg={bg} count={tasksToMap?.length} />
-      {tasks?.length === 0? <div className="p-2 text-sm">There Are No Task To Do🥳</div>: ""}
+      {tasks?.length === 0? <div className="p-2 text-sm">Empty </div>: ""}
       {tasksToMap?.map((task) => (
         <Task key={task.id} tasks={tasks} setTasks={setTasks} task={task} />
       ))}

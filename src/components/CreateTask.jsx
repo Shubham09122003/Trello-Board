@@ -41,13 +41,13 @@ export const CreateTask = ({ tasks, setTasks }) => {
       <input
         type="text"
         placeholder="Enter new Task"
-        className="border-2 border-grey bg-red-50 rounded-md mr-4 h-12 w-64 px-1  "
+        className="border-2 border-grey-500 bg-red-0 rounded-md mr-4 h-12 w-64 px-1  "
         value={task.name}
         onChange={(e) => {
             setTask({...task, name: e.target.value})
         }}
       />
-      <button className="bg-lime-600 px-4 h-12 rounded-md">Create Task</button>
+      <button className="bg-blue-400 px-4 h-12 rounded-md">Create Task</button>
     </form>
   );
 };
